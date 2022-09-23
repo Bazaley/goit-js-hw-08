@@ -5,9 +5,9 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
 
 const galleryRef = document.querySelector('.gallery');
-const galleryLinks = renderGallery(galleryItems);
+const markup = renderGallery(galleryItems);
 
-galleryRef.insertAdjacentHTML('beforeend', galleryLinks);
+galleryRef.insertAdjacentHTML('beforeend', markup);
 
 galleryRef.addEventListener('click', onGalleryClick);
 
